@@ -33,7 +33,7 @@
                     <input type="text" placeholder="enter a email" name="email" class="form-control">
                     </div>
                     <div class="form-group">
-                    <input type="text" placeholder="enter a password" name="password" class="form-control">
+                    <input type="password" placeholder="enter a password" name="password" class="form-control">
                     </div>
                     <input type="submit"  name="login" value="Login" class="btn btn-primary">
 

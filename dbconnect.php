@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect('localhost','root','','dbjobsportal');
+$con = mysqli_connect('localhost','root','03092002','dbjobsportal');
 
 if(!$con){
     die('cannot connected');

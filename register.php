@@ -33,10 +33,10 @@
                      <input type="text" placeholder="enter a name" name="name" class="form-control"> 
                      </div>
                      <div class="form-group">
-                    <input type="text" placeholder="enter a email" name="email" class="form-control">
+                    <input type="email" placeholder="enter a email" name="email" class="form-control">
                     </div>
                     <div class="form-group">
-                    <input type="text" placeholder="enter a password" name="password" class="form-control">
+                    <input type="password" placeholder="enter a password" name="password" class="form-control">
                     </div>
                     <input type="submit"  name="empregister" value="Register Employer" class="btn btn-primary">
 
@@ -53,10 +53,10 @@
                      <input type="text" placeholder="enter a name" name="name" class="form-control"> 
                      </div>
                      <div class="form-group">
-                    <input type="text" placeholder="enter a email" name="email" class="form-control ">
+                    <input type="email" placeholder="enter a email" name="email" class="form-control ">
                     </div>
                     <div class="form-group">
-                    <input type="text" placeholder="enter a password" name="password" class="form-control">
+                    <input type="password" placeholder="enter a password" name="password" class="form-control">
                     </div>
                     
                     <input type="submit"  name="userregister" value="Register User" class="btn btn-primary">
