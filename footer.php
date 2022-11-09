@@ -3,7 +3,7 @@
    
   	<div class="clearfix"> </div>
 	<div class="copy">
-		<p>Copyright © 2020 . All Rights Reserved . Design by <a href="http://www.approxsol.com/" target="_blank">ApproxSol.</a> </p>
+		<p style="font-family: cursive">Design by group 9</p>
 	</div>
   </div>
 </div>

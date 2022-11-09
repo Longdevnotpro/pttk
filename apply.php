@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +44,7 @@
                     <input type="file"  name="file" class="form-control"> 
                     </div>
                     
-                    <input type="submit"  name="applyjob" value="Post Job" class="btn btn-primary">
+                    <input type="submit"  name="applyjob" value="Post CV" class="btn btn-primary">
 
                  </form>
               
@@ -66,7 +63,7 @@
 
             $userid = $_POST['userid'];
             $jobid = $_POST['jobid'];
-            $date = date('d/m/y');
+            $date = date('y/m/d');
             
 
              $file = $_FILES['file']['name'];
