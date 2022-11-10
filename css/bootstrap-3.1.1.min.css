@@ -722,7 +722,7 @@ pre code {
     overflow-y: scroll
 }
 
-body>.container {
+.container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
