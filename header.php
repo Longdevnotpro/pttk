@@ -25,17 +25,19 @@
 							  <li><a href="admin.php">Dashboard</a></li>
 							  <li><a href="categories.php">Categories</a></li>
 							  <li><a href="uploadjob.php">Jobs</a></li>
-								<li><a href="application.php">View Application</a></li>
-								<li><a href="logout.php">Logout</a></li>
+							  <li><a href="application.php">View Application</a></li>
+							  <li><a href="logout.php">Logout</a></li>
 							  ';
 						  }else if($type == 2){
 							echo '
 							      <li><a href="index.php">Home</a></li>
+								  <li><a href="index.php #view">View Jobs</a></li>
 							      <li><a href="viewappjob.php">View Applied Job</a></li>
 							      <li><a href="logout.php">Logout</a></li>
 							';
 						  }else{
 							  echo '
+							  <li><a href="index.php #view">View Jobs</a></li>
 							  <li><a href="login.php">Login</a></li>
 						      <li><a href="register.php">Register</a></li>
 							  ';

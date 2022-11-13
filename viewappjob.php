@@ -71,7 +71,7 @@
                                         <td><?= $data['appid'] ?></td>
                                         <td><?= $data['title'] ?></td>
                                         <td><?= $data['name'] ?></td>
-                                        <td><?= $data['cv'] ?></td>
+                                        <td><a href="./cv/<?= $data['cv'] ?>" target="_blank"><?= $data['cv'] ?></a></td>
                                         <td><?= $data['date'] ?></td>
 
                                    </tr>

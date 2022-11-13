@@ -56,7 +56,7 @@
 ?>
 	   
 
-       <div class="col-md-12" height="400px;" > 
+       <div id="view" class="col-md-12" height="400px;" > 
               
                 <h1><?= $data['title'] ?></h1>
                 <h5><?= $data['categories'] ?></h5>
