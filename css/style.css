@@ -98,13 +98,13 @@ body a {
 }
 
 .banner {
-    background: url(../images/cviec.jpg)no-repeat center top;
+    background: url(../images/banner.gif)no-repeat center top;
     background-size: cover;
     min-height: 630px;
 }
 
 .banner_1 {
-    background: url(../images/cviec.jpg)no-repeat center top;
+    background: url(../images/banner.gif)no-repeat center top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
