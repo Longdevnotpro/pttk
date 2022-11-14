@@ -10,9 +10,6 @@
   include('header_link.php');
   include('dbconnect.php');
 
-
-
-
   ?>
 </head>
 
@@ -76,11 +73,8 @@
       $sql = "INSERT INTO `application`(`userid`, `jobid`, `cv`, `date`) VALUES ('$userid','$jobid','$file','$date')";
       mysqli_query($con, $sql);
 
+      echo "<script>alert('Apply Job Successfully');window.location = 'index.php';</script>";
 
-
-      echo "<script>alert('Apply Job')</script>";
-
-      header('Location: index.php');
     }
     ?>
 

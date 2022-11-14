@@ -10,10 +10,7 @@
 
      include('header_link.php');
      include('dbconnect.php');
-
-
-
-
+     
      ?>
 </head>
 
@@ -49,18 +46,21 @@
                               <select name="catid" class="form-control">
                                    <option value="">Select Categories</option>
                                    <?php
-
-                                   $sql = "select * from categories";
-                                   $data = mysqli_query($con, $sql);
-                                   if (mysqli_num_rows($data) > 0) {
+                                        $sql = "select * from categories";
+                                        $data = mysqli_query($con, $sql);
+                                   if (mysqli_num_rows($data) > 0) 
+                                   {
                                         while ($rs = mysqli_fetch_array($data)) {
-                                   ?><option value="<?= $rs['catid'] ?>"><?= $rs['name'] ?></option><?php
-                                                                                                    }
-                                                                                               } else {
-                                                                                                         ?><option>No category found</option><?php
-                                                                                               }
-
-                                                                           ?>
+                                   ?>
+                                   <option value="<?= $rs['catid'] ?>"><?= $rs['name'] ?></option>
+                                   <?php
+                                   }
+                                   } else {
+                                   ?>
+                                   <option>No category found</option>
+                                   <?php  
+                                   }
+                                   ?>
 
                               </select>
                          </div>

@@ -84,7 +84,8 @@
 
 
 
-            echo "<script>alert('Employer Register')</script>";
+            echo "<script>alert('Registation Successfully');window.location = 'login.php';</script>";
+            
         }
 
         if (isset($_POST['userregister'])) {
