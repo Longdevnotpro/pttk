@@ -38,10 +38,11 @@
                     <div class="form-group">
                         <input type="password" placeholder="enter a password" name="password" class="form-control">
                     </div>
-                    <input type="submit" name="login" value="Login" class="btn btn-primary">
+                    <input type="submit" name="login" value="Login" class="btn btn-primary" style="width:68.6px;">
+                    <button name="cancel" value="Cancel" class="btn btn-primary"><a style="color: #fff;text-decoration:none; " href="./index.php">Cancel</a></button>
+                    <p>Do you already have an account?<a href="./register.php">Register</a></p>
 
                 </form>
-
 
             </div>
 
@@ -55,9 +56,9 @@
             $email = $_POST['email'];
             $password = $_POST['password'];
 
-            $sql = "select userid,name,email,password,type from user where email = '$email' and password = '$password' 
+            $sql = "select * from user where email = '$email' and password = '$password' 
             UNION ALL
-            select empid, name, email , password,type from employer where email = '$email' and password = '$password'
+            select * from employer where email = '$email' and password = '$password'
             ";
 
             //$sql = "select * from employer where email = '$email' and password = '$password'";
@@ -87,9 +88,10 @@
                     header('Location: index.php');
                 }
             } else {
-                echo "<h1 style='color:red;'> Invalid Username or password</h1>";
+                echo "<script>alert('Invalid Username or password!!!')</script>";
             }
         }
+
         ?>
 
 

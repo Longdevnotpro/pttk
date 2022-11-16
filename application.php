@@ -11,9 +11,6 @@
      include('header_link.php');
      include('dbconnect.php');
 
-
-
-
      ?>
 </head>
 
@@ -23,10 +20,10 @@
 
      include('header.php');
 
-     if (!isset($_SESSION['userid'])) {
+     if(!isset($_SESSION['userid'])) {
           header('Location: login.php');
      }
-
+     
      $empid = $_SESSION['userid'];
 
      ?>
@@ -56,11 +53,13 @@
                          <tbody id="mytable">
                               <?php
 
-                              $sql = "select application.appid, user.name , jobs.title, employer.empid, application.cv, application.date
+                              $sql = "
+                              select application.appid, user.name , jobs.title, employer.empid, application.cv, application.date
                               from application
                               INNER join jobs on jobs.jobid = application.jobid
                               INNER join employer on employer.empid = jobs.empid
                               INNER join user on user.userid = application.userid
+                              where employer.empid = '$empid';
                               ";
                               $rs = mysqli_query($con, $sql);
                               while ($data = mysqli_fetch_array($rs)) {

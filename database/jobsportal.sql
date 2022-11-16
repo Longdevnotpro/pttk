@@ -39,9 +39,9 @@ CREATE TABLE `application` (
 -- Dumping data for table `application`
 --
 
-INSERT INTO `application` (`appid`, `userid`, `jobid`, `cv`, `date`) VALUES
-(1, 2, 2, 'HTML5 & CSS3 The Complete Manual 2014.pdf', '2004-07-21'),
-(2, 2, 3, 'Windows Forms App.pdf', '2004-07-21');
+-- INSERT INTO `application` (`appid`, `userid`, `jobid`, `cv`, `date`) VALUES
+-- (1, 2, 2, 'HTML5 & CSS3 The Complete Manual 2014.pdf', '2022-07-21'),
+-- (2, 2, 3, 'Windows Forms App.pdf', '2022-07-21');
 
 -- --------------------------------------------------------
 
@@ -71,7 +71,7 @@ INSERT INTO `categories` (`catid`, `name`) VALUES
 
 CREATE TABLE `employer` (
   `empid` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
+  `company` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `type` int(11) NOT NULL
@@ -81,7 +81,7 @@ CREATE TABLE `employer` (
 -- Dumping data for table `employer`
 --
 
-INSERT INTO `employer` (`empid`, `name`, `email`, `password`, `type`) VALUES
+INSERT INTO `employer` (`empid`, `company`, `email`, `password`, `type`) VALUES
 (2, 'approxsol', 'ali@gmail.com', '123', 1),
 (3, 'LG', 'lg123@gmail.com', '123', 1);
 
@@ -107,9 +107,9 @@ CREATE TABLE `jobs` (
 --
 
 INSERT INTO `jobs` (`jobid`, `title`, `catid`, `description`, `salary`, `timing`, `location`, `empid`) VALUES
-(1, 'Front end Designer', 1, 'front designing, ui/ux etc', '20000', '11 to 1', 'Karachi, Pakistan', 2),
-(2, 'Android developer', 3, 'java, xml, ui/ux, kotlin would be plus ', '25000', '3 to 5 ', 'Karachi, Pakistan', 2),
-(3, 'Asp.net developer', 2, 'asp.net mvc, rest api, angular would be plus', '35000', '9 to 5 ', 'Karachi, Pakistan', 2);
+(1, 'Front end Designer', 1, 'front designing, ui/ux etc', '2000000', '11 to 1', 'Ha Noi, VN', 2),
+(2, 'Android developer', 3, 'java, xml, ui/ux, kotlin would be plus ', '2500000', '3 to 5 ', 'TP.HCM, VN', 2),
+(3, 'Asp.net developer', 2, 'asp.net mvc, rest api, angular would be plus', '350000', '9 to 5 ', 'Da Nang, VN', 2);
 
 -- --------------------------------------------------------
 
@@ -144,11 +144,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`userid`, `name`, `email`, `password`, `type`) VALUES
 (2, 'usman', 'usman@gmail.com', '123', 2),
-(4, 'zeeshan', 'zeeshan@gmail.com', '123', 2),
-(5, 'arzoo', 'arzoo@gmail.com', '000', 2),
-(6, 'akbar', 'akbar@gmail.com', '123', 2),
-(7, 'demo', 'demo', '', 2),
-(8, 'demo', 'demo@gmail.com', '123', 2);
+(3, 'demo', 'demo@gmail.com', '123', 2);
 
 --
 -- Indexes for dumped tables

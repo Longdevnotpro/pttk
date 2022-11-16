@@ -47,6 +47,7 @@
                               <tr>
                                    <th>ID</th>
                                    <th>Job</th>
+                                   <th>Company</th>
                                    <th>User</th>
                                    <th>CV</th>
                                    <th>Date</th>
@@ -56,7 +57,7 @@
                          <tbody id="mytable">
                               <?php
 
-                              $sql = "select application.appid, application.userid, user.name , jobs.title, employer.empid, application.cv, application.date
+                              $sql = "select application.appid, application.userid, user.name , jobs.title, employer.company, application.cv, application.date
                               from application
                               INNER join jobs on jobs.jobid = application.jobid
                               INNER join employer on employer.empid = jobs.empid
@@ -70,6 +71,7 @@
                                    <tr>
                                         <td><?= $data['appid'] ?></td>
                                         <td><?= $data['title'] ?></td>
+                                        <td><?= $data['company'] ?></td>
                                         <td><?= $data['name'] ?></td>
                                         <td><a href="./cv/<?= $data['cv'] ?>" target="_blank"><?= $data['cv'] ?></a></td>
                                         <td><?= $data['date'] ?></td>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/logo1.png">
   <title>Apply Job | Jobs Portal</title>
   <?php
 
@@ -44,6 +45,7 @@
           </div>
 
           <input type="submit" name="applyjob" value="Post CV" class="btn btn-primary">
+          <button class="btn btn-primary"><a style="color: #fff;text-decoration:none; " href="./index.php">Cancel</a></button>
 
         </form>
 
@@ -74,7 +76,6 @@
       mysqli_query($con, $sql);
 
       echo "<script>alert('Apply Job Successfully');window.location = 'index.php';</script>";
-
     }
     ?>
 

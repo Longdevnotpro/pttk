@@ -33,7 +33,7 @@
                 <form action="register.php" method="post">
 
                     <div class="form-group">
-                        <input type="text" placeholder="enter a name" name="name" class="form-control">
+                        <input type="text" placeholder="enter a name" name="company" class="form-control">
                     </div>
                     <div class="form-group">
                         <input type="email" placeholder="enter a email" name="email" class="form-control">
@@ -75,16 +75,15 @@
 
         if (isset($_POST['empregister'])) {
 
-            $name = $_POST['name'];
+            $company = $_POST['company'];
             $email = $_POST['email'];
             $password = $_POST['password'];
 
-            $sql = "INSERT INTO `employer`( `name`, `email`, `password`, `type`) VALUES ('$name','$email','$password','1')";
+            $sql = "INSERT INTO `employer`( `company`, `email`, `password`, `type`) VALUES ('$company','$email','$password','1')";
             mysqli_query($con, $sql);
 
-
-
             echo "<script>alert('Registation Successfully');window.location = 'login.php';</script>";
+
             
         }
 
@@ -99,7 +98,27 @@
             mysqli_query($con, $sql2);
 
 
-            echo "<script>alert('User Register')</script>";
+            echo "<script>alert('User Register');window.location = 'login.php';</script>";
+
+            // $exist  = "no";
+
+            // try{
+            //     $sql2 = "INSERT INTO `user`(`name`, `email`, `password`, `type`) VALUES ('$name','$email','$password','2')";
+            //     mysqli_query($con, $sql2);
+            // }
+            // catch( PDOException $e ) {
+            //     error_log($e -> getMessage());
+            //     if($e->getCode()==23000){ 
+            //         echo "<script>alert('Error User Register')</script>";
+            //         $exist  = "yes";
+                    
+            //     }
+               
+            // }
+
+            // if ($exist == "no") {
+            //     echo "<script>alert('User Register');window.location = 'login.php';</script>";      
+            // }
         }
 
         ?>

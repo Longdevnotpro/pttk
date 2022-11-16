@@ -137,7 +137,7 @@ body a {
     margin: 10px 0;
     border: 1px solid #999;
     color: #999;
-    background: none;
+    /* background: none; */
     outline: none;
     font-weight: 300;
 }
@@ -185,7 +185,7 @@ body a {
 }
 
 .btn-2 {
-    background: #1c7fbf;
+    background: #428bca;
     color: #fff;
 }
 
@@ -229,7 +229,7 @@ body a {
 h2.title {
     font-size: 1.5em;
     border-bottom: none;
-    color: #ff821c !important;
+    color: #351969fc !important;
     margin: 0;
     margin-bottom: 8px;
     margin-top: 4px;
