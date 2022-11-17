@@ -45,7 +45,7 @@
 			         	
 	        </ul>
 	    </div>
-	    <div class="clearfix"> </div>
+	    <!-- <div class="clearfix"> </div> -->
 	  </div>
 	    <!--/.navbar-collapse-->
 	</nav>
