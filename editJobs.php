@@ -91,7 +91,8 @@
             // $sql = "update jobs set timing='$jobtiming' where jobid='$jobid'";
 
             if (mysqli_query($con, $sql)) {
-                echo "<script>alert('Update Category Successfully')</script>";
+                // echo "<script>alert('Update Successfully')</script>";
+                echo "<script>alert('Update Successfully');window.location = 'admin.php';</script>";
             } else {
                 echo "<script>alert('Not Updated')</script>";
             }

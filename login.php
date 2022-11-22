@@ -33,7 +33,7 @@
 
                 <form action="login.php" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="enter a email" name="email" class="form-control">
+                        <input type="email" placeholder="enter a email" name="email" class="form-control">
                     </div>
                     <div class="form-group">
                         <input type="password" placeholder="enter a password" name="password" class="form-control">
@@ -83,9 +83,9 @@
 
 
                 if ($type == 1) {
-                    header('Location: admin.php');
+                    echo "<script>alert('Login Successfully');window.location = 'admin.php';</script>";
                 } else if ($type == 2) {
-                    header('Location: index.php');
+                    echo "<script>alert('Login Successfully');window.location = 'index.php';</script>";
                 }
             } else {
                 echo "<script>alert('Invalid Username or password!!!')</script>";

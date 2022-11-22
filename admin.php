@@ -13,7 +13,7 @@
 
 
     ?>
-    
+
 </head>
 
 <body>
@@ -47,10 +47,10 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Title</th>
+                    <th style="width: 25px;">ID</th>
+                    <th >Title</th>
                     <th>Categories</th>
-                    <th>Description</th>
+                    <th >Description</th>
                     <th>Timing</th>
                     <th>Salary</th>
                     <th>Location</th>
@@ -81,9 +81,9 @@
                         <td><?= $data['salary'] ?></td>
                         <td><?= $data['location'] ?></td>
                         <td><?= $data['company'] ?></td>
-                        <td>
-                            <a href="editJobs.php?jobid=<?= $data['jobid'] ?>" class="btn btn-info"> Edit</a>
-                            <a href="admin.php?deljobid=<?= $data['jobid'] ?>" class="btn btn-danger"> Delete</a>
+                        <td style="display: flex">
+                            <a href="editJobs.php?jobid=<?= $data['jobid'] ?>" class="btn btn-info" style="width: 70px; margin-right: 5px"> Edit</a>
+                            <a href="admin.php?deljobid=<?= $data['jobid'] ?>" class="btn btn-danger" style="width: 70px"> Delete</a>
                         </td>
                     </tr>
 
